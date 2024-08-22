@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pantry.PantryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/layout_pantry_list"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/pantryFilterApplied"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="9"
+                android:text="@string/noFilter" />
+
+            <ImageButton
+                android:id="@+id/pantryFilterBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/filter_logo" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pantryRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:background="@drawable/layout_pantry_list"
+            android:padding="8dp" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fastInsertBtn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom|end"
+        android:clickable="true"
+        app:fabCustomSize="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:maxImageSize="35dp"
+        app:srcCompat="@drawable/add_logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

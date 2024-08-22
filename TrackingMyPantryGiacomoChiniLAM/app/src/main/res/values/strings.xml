@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">TrackingMyPantryGiacomoChiniLAM</string>
+    <!-- login page -->
+    <string name="email">Inserisci email</string>
+    <string name="password">Inserisci password</string>
+    <string name="login">Accedi</string>
+    <string name="remember">Resta connesso</string>
+    <string name="needAccount">Non hai un account? Registrati qui!</string>
+    <string name="errorLogin">Non è stato possibile accedere all\'account, riprovare.</string>
+    <string name="okLogin">Login effettuato correttamente!</string>
+    <!-- create account page -->
+    <string name="username">Inserisci username</string>
+    <string name="needLogin">Hai già un account? Accedi qui!</string>
+    <string name="register">Crea account</string>
+    <string name="errorCreate">Non siamo riusciti a creare un account, riprovare.</string>
+    <string name="okCreate">Account creato correttamente!</string>
+    <!-- home page navigation drawer -->
+    <string name="menu_home">Home</string>
+    <string name="menu_pantry">Home/Dispensa</string>
+    <string name="menu_insert">Inserisci</string>
+    <string name="menu_shopping">Lista della spesa</string>
+    <string name="menu_profile">Profilo</string>
+    <string name="menu_settings">Impostazioni</string>
+    <string name="menu_help">Aiuto</string>
+    <!-- profile page -->
+    <string name="profile">Informazioni account</string>
+    <string name="id">Id utente</string>
+    <string name="utente">Nome utente</string>
+    <string name="mail">Email</string>
+    <string name="creationDate">Data di creazione account</string>
+    <string name="logout">Disconnetti ed esci</string>
+    <!-- toolbar title strings -->
+    <string name="profile_bar">Profilo</string>
+    <string name="scanner_bar">Scanner</string>
+    <string name="login_bar">Accedi</string>
+    <string name="create_account_bar">Crea Account</string>
+    <string name="home_bar">Home</string>
+    <string name="insert_bar">Inserisci</string>
+    <string name="pantry_bar">Home/Dispensa</string>
+    <string name="shopping_bar">Lista della spesa</string>
+    <string name="settings_bar">Impostazioni</string>
+    <string name="help_bar">Aiuto</string>
+    <!-- settings page-->
+    <string name="settings">Impostazioni</string>
+    <string name="defaultSettings">Valori predefiniti</string>
+    <string name="accountSettings">Account</string>
+    <string name="expireSettings">Periodo di scadenza automatico</string>
+    <string name="quantSettings">Quantità</string>
+    <string name="qualSettings">Valutazione prodotto</string>
+    <string name="ggSettings">Giorni</string>
+    <string name="mmSettings">Mesi</string>
+    <string name="yySettings">Anni</string>
+    <string name="accessSettings">Rimuovi accesso automatico</string>
+    <string name="dbSettings">Svuota la dispensa</string>
+    <string name="quantDialog">Scegli quantità predefinita</string>
+    <string name="qualDialog">Scegli valutazione predefinita</string>
+    <string name="ggDialog">Scegli giorni</string>
+    <string name="mmDialog">Scegli mesi</string>
+    <string name="yyDialog">Scegli anni</string>
+    <string name="OK_REMOVE_ACCESS">Accesso automatico rimosso</string>
+    <string name="OK_EMPTY_PANTRY">La dispensa è stata svuotata</string>
+    <!-- pantry page-->
+    <string name="filterDialog">Seleziona filtri</string>
+    <string name="noFilter">Nessun filtro applicato al momento</string>
+    <!-- filter strings-->
+    <string name="quantityFilter">Quantità</string>
+    <string name="typeFilter">Tipologia</string>
+    <string name="asc">Crescente</string>
+    <string name="desc">Decrescente</string>
+    <string name="normal">Nessuno</string>
+    <string name="fruit">Frutta</string>
+    <string name="meat">Carne e pesce</string>
+    <string name="drink">Bevande</string>
+    <string name="vegetables">Verdure</string>
+    <string name="milk">Latticini</string>
+    <string name="pasta">Pasta e riso</string>
+    <string name="nessuno">Nessuno</string>
+    <!-- confirm item strings-->
+    <string name="confExpireDate">Scegli una scadenza</string>
+    <string name="confQuantity">Scegli quantità</string>
+    <string name="confQuality">Valuta prodotto</string>
+    <string name="confirm">Conferma</string>
+    <!-- insert strings-->
+    <string name="putInsert">Inserisci un nuovo prodotto</string>
+    <!-- put item strings-->
+    <string name="putBarcode">Codice a barre</string>
+    <string name="putName">Nome prodotto</string>
+    <string name="putDescription">Descrizione</string>
+    <string name="putConfirm">Conferma</string>
+    <!-- shopping strings-->
+    <string name="shoppingTitle">Crea lista della spesa</string>
+    <string name="shoppingCounter">0/40</string>
+    <string name="shoppingFileName">Nome file</string>
+    <string name="shoppingCreate">Genera lista con elementi esauriti</string>
+    <!-- dialog strings-->
+    <string name="updateDateDialog">Aggiorna scadenza</string>
+    <string name="dateTitleDialog">Seleziona scadenza</string>
+    <string name="quantityTitleDialog">Seleziona quantità</string>
+    <string name="qualityTitleDialog">Valuta prodotto</string>
+    <string name="confirmDialog">Conferma</string>
+    <string name="cancelDialog">Annulla</string>
+    <!-- messaggi di tipo toast/snackbar -->
+    <string name="emptyShopping">Non ci sono elementi esauriti nella tua dispensa!</string>
+    <string name="addShopping">Inserito nella lista</string>
+    <string name="removeShopping">Rimosso dalla lista</string>
+    <string name="ERROR_FILENAME_SHOPPING">Devi prima inserire un nome per il file!</string>
+    <string name="OK_DOWNLOAD_SHOPPING">Lista della spesa creata correttamente!</string>
+    <string name="ERROR_DOWNLOAD_SHOPPING">Non siamo riusciti a creare la lista, qualcosa è andato storto.</string>
+    <string name="ERROR_SHARE_SHOPPING">Devi prima scaricare il file per poterlo condividere!</string>
+    <string name="ERROR_ID_INSERT">Il prodotto è già stato inserito in passato!</string>
+    <string name="ERROR_SELECT_INSERT">Devi prima selezionare un prodotto per poter continuare</string>
+    <string name="OK_PUT">Prodotto inserito correttamente nel server</string>
+    <string name="ERROR_PUT">Errore durante il caricamento del prodotto nel server</string>
+    <string name="OK_CONFIRM">Prodotto inserito correttamente nella dispensa</string>
+    <string name="ERROR_CONFIRM">Errore durante l\'inserimento del prodotto nella dispensa</string>
+    <string name="OK_REMOVE">Prodotto eliminato</string>
+    <string name="ERROR_SEARCH">Errore durante la richiesta al server</string>
+    <string name="ERROR_SHOPPING_QUANTITY">Controllare il numero di prodotti inseriti</string>
+    <string name="EMPTY_SEARCH">Non sono stati trovati prodotti con il codice a barre richiesto</string>
+    <string name="nav_header_user">Nome utente</string>
+    <string name="nav_header_email">Email utente</string>
+    <string name="nav_header_desc">Desc</string>
+
+
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>

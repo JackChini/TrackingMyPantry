@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    android:weightSum="10">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        style="@style/defTextView"/>
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="8"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" android:layout_margin="16dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:layout_margin="16dp"/>
+
+        <CheckBox
+            android:id="@+id/remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remember"
+            android:layout_margin="16dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login" />
+
+        <Button
+            android:id="@+id/needAccBtn"
+            style="@style/alreadyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/needAccount" />
+    </LinearLayout>
+
+</LinearLayout>

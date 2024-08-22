@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.insert.InsertItemFragment"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    android:weightSum="15">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/scannerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/scanner_logo"
+            android:gravity="left"
+            android:padding="10dp"
+            android:background="@color/trasparent"/>
+
+        <EditText
+            android:id="@+id/barcodeNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_logo"
+            android:gravity="right"
+            android:padding="10dp"
+            android:background="@color/trasparent"/>
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemListRecView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="13"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/layout_pantry_list"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/moveToPutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/putInsert"/>
+
+    </LinearLayout>
+
+</LinearLayout>

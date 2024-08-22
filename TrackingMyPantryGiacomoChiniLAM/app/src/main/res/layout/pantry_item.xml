@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/layout_pantry_item"
+    android:layout_margin="6dp"
+    android:elevation="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/expireItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="2dp"
+            android:background="@drawable/layout_expire_item"
+            style="@style/defTextView"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/deleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bin_logo"
+            android:layout_gravity="right"
+            android:background="@color/trasparent"
+            android:padding="3dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pantryItemImg"
+        android:layout_width="95dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/myitem_logo"
+        android:padding="2dp"
+        android:background="@drawable/layout_img_item"/>
+
+    <TextView
+        android:id="@+id/nameItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        style="@style/defTextView"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="6dp"
+        android:padding="3dp">
+
+        <ImageButton
+            android:id="@+id/removeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/remove_logo"
+            android:background="@color/trasparent"/>
+
+        <TextView
+            android:id="@+id/quantityItem"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            style="@style/defTextView"/>
+
+        <ImageButton
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/add_logo"
+            android:background="@color/trasparent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

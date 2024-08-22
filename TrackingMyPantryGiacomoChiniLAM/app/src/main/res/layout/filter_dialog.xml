@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.pantry.PantryFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quantityFilter"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/quantityRdGrp">
+
+        <RadioButton
+            android:id="@+id/zeroFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/asc" />
+
+        <RadioButton
+            android:id="@+id/fiveTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desc" />
+
+        <RadioButton
+            android:id="@+id/gtTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/normal" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/typeFilter" />
+
+    <LinearLayout
+        android:id="@+id/checkBoxContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/milkChk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/milk" />
+
+        <CheckBox
+            android:id="@+id/drinkChk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/drink" />
+
+        <CheckBox
+            android:id="@+id/fruitChk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fruit" />
+
+        <CheckBox
+            android:id="@+id/meatChk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/meat" />
+
+        <CheckBox
+            android:id="@+id/vegetablesChk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vegetables" />
+
+        <CheckBox
+            android:id="@+id/pastaChk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pasta" />
+
+        <CheckBox
+            android:id="@+id/nessunoChk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nessuno" />
+    </LinearLayout>
+
+</LinearLayout>

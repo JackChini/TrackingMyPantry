@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="alreadyBtn">
+        <item name="android:textColor">#0020D5</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+
+    <style name="defButton">
+        <item name="android:backgroundTint">#E4E4E4</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+    <style name="defTextView">
+        <item name="android:backgroundTint">#E4E4E4</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="MySpinnerDatePickerStyle" parent="android:Theme.DeviceDefault.Light.Dialog.Alert">
+        <item name="android:datePickerStyle">@style/MySpinnerDatePicker</item>
+    </style>
+
+    <style name="MySpinnerDatePicker" parent="android:Widget.Material.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+    </style>
+
+
+</resources>

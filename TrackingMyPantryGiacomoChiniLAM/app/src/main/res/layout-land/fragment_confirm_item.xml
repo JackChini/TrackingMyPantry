@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.insert.ConfirmItemFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:weightSum="7">
+
+                        <TextView
+                            android:id="@+id/confName"
+                            style="@style/defTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center" />
+                        <ImageView
+                            android:id="@+id/confImg"
+                            android:layout_width="115dp"
+                            android:layout_height="115dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="8dp"
+                            android:layout_weight="2"
+                            app:srcCompat="@drawable/myitem_logo" />
+                        <TextView
+                            android:id="@+id/confBarcode"
+                            style="@style/defTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/confDesc"
+                            style="@style/defTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+
+                        <Button
+                            android:id="@+id/confQuantity"
+                            style="@style/defButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/confQuantity"
+                            android:textAlignment="center" />
+
+                        <Button
+                            android:id="@+id/confExpireDate"
+                            style="@style/defButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/confExpireDate"
+                            android:textAlignment="center" />
+
+                        <Button
+                            android:id="@+id/confRating"
+                            style="@style/defButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/confQuality"
+                            android:textAlignment="center" />
+
+                        <Button
+                            android:id="@+id/confType"
+                            style="@style/defButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Seleziona genere"
+                            android:textAlignment="center" />
+
+                        <Button
+                            android:id="@+id/sendchoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="@string/confirm"
+                            android:textAlignment="center" />
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>

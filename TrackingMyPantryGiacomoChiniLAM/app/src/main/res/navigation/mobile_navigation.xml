@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_pantry">
+
+    <fragment
+        android:id="@+id/nav_pantry"
+        android:name="com.example.trackingmypantrygiacomochinilam.ui.pantry.PantryFragment"
+        android:label="@string/pantry_bar"
+        tools:layout="@layout/pantry_fragment">
+        <action
+            android:id="@+id/action_nav_pantry_to_nav_insert"
+            app:destination="@id/nav_insert" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.trackingmypantrygiacomochinilam.ui.profile.ProfileFragment"
+        android:label="@string/profile_bar"
+        tools:layout="@layout/profile_fragment" />
+
+    <fragment
+        android:id="@+id/nav_insert"
+        android:name="com.example.trackingmypantrygiacomochinilam.ui.insert.InsertItemFragment"
+        android:label="@string/insert_bar"
+        tools:layout="@layout/fragment_insert_item">
+        <action
+            android:id="@+id/action_nav_insert_to_nav_confirm"
+            app:destination="@id/nav_confirm" />
+        <action
+            android:id="@+id/action_nav_insert_to_nav_scanner"
+            app:destination="@id/nav_scanner" />
+        <action
+            android:id="@+id/action_nav_insert_to_nav_putItem"
+            app:destination="@id/nav_putItem" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_confirm"
+        android:name="com.example.trackingmypantrygiacomochinilam.ui.insert.ConfirmItemFragment"
+        android:label="@string/insert_bar"
+        tools:layout="@layout/fragment_confirm_item" />
+
+    <fragment
+        android:id="@+id/nav_scanner"
+        android:name="com.example.trackingmypantrygiacomochinilam.ui.insert.ScannerFragment"
+        android:label="@string/scanner_bar"
+        tools:layout="@layout/fragment_scanner"></fragment>
+
+    <fragment
+        android:id="@+id/nav_putItem"
+        android:name="com.example.trackingmypantrygiacomochinilam.ui.insert.PutMyItemFragment"
+        android:label="@string/insert_bar"
+        tools:layout="@layout/fragment_put_my_item">
+        <action
+            android:id="@+id/action_nav_putItem_to_nav_scanner"
+            app:destination="@id/nav_scanner" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_shopping"
+        android:name="com.example.trackingmypantrygiacomochinilam.ui.shopping.ShoppingFragment"
+        android:label="@string/shopping_bar"
+        tools:layout="@layout/shopping_fragment" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.trackingmypantrygiacomochinilam.ui.settings.SettingsFragment"
+        android:label="@string/settings_bar"
+        tools:layout="@layout/settings_fragment" />
+
+
+</navigation>

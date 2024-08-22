@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_pantry_item"
+    android:layout_margin="6dp"
+    android:elevation="5dp">
+
+    <ImageView
+        android:id="@+id/pantryItemImg"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/myitem_logo"
+        android:padding="10dp"/>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_margin="3dp"/>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/itemDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

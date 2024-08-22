@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.SettingsFragment"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:padding="8dp"
+    android:gravity="center"
+    android:weightSum="15">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        style="@style/defTextView"
+        android:layout_weight="2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/defTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/defaultSettings"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/defQuantityBtn"
+            style="@style/defTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quantSettings" />
+
+        <Button
+            android:id="@+id/defQualityBtn"
+            style="@style/defTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/qualSettings" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="4">
+
+        <TextView
+            android:id="@+id/textView11"
+            style="@style/defTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expireSettings" />
+
+        <Button
+            android:id="@+id/defExpireDayBtn"
+            style="@style/defTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ggSettings" />
+
+        <Button
+            android:id="@+id/defExpireMonthBtn"
+            style="@style/defTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mmSettings" />
+
+        <Button
+            android:id="@+id/defExpireYearBtn"
+            style="@style/defTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/yySettings" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="4">
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/defTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/accountSettings"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/defAccessBtn"
+            style="@style/defTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/accessSettings" />
+
+        <Button
+            android:id="@+id/defDbBtn"
+            style="@style/defTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dbSettings" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/defExitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="esci"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+</LinearLayout>

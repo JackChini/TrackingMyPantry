@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_1">#105A13</color>
+    <color name="green_2">#27872B</color>
+    <color name="green_3">#7CAF40</color>
+    <color name="green_4">#CDDC39</color>
+    <color name="yellow_1">#FFEB3B</color>
+    <color name="black">#000000</color>
+    <color name="grey">#A6A6A6</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+    <color name="pantryItem">#F4F4F4</color>
+    <color name="expireItem">#000000</color>
+    <color name="verdura">#80A654</color>
+    <color name="latticini">#97EAF4</color>
+    <color name="pasta">#FBBD00</color>
+    <color name="frutta">#C575D3</color>
+    <color name="trasparent">#00FFFFFF</color>
+</resources>

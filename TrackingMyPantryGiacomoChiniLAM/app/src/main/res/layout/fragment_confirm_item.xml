@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.insert.ConfirmItemFragment"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    android:weightSum="13">
+
+        <TextView
+            android:id="@+id/confName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            style="@style/defTextView"/>
+
+        <ImageView
+            android:id="@+id/confImg"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            app:srcCompat="@drawable/myitem_logo"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/confBarcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            style="@style/defTextView"/>
+
+        <TextView
+            android:id="@+id/confDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:layout_weight="3"
+            style="@style/defTextView"/>
+
+        <Button
+            android:id="@+id/confQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confQuantity"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            style="@style/defButton"/>
+
+        <Button
+            android:id="@+id/confExpireDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confExpireDate"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            style="@style/defButton"/>
+
+        <Button
+            android:id="@+id/confRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confQuality"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            style="@style/defButton"/>
+
+        <Button
+            android:id="@+id/confType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Seleziona genere"
+            android:textAlignment="center"
+            style="@style/defButton"/>
+
+        <Button
+            android:id="@+id/sendchoice"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            android:textAlignment="center"
+            android:layout_weight="1"/>
+</LinearLayout>

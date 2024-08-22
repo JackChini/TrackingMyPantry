@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CreateAccountActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    android:weightSum="10">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_account_bar"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="22dp"
+            style="@style/defTextView"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="9">
+
+                <EditText
+                    android:id="@+id/createUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/username"
+                    android:inputType="textPersonName"
+                    android:layout_margin="16dp"/>
+                <EditText
+                    android:id="@+id/createEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:layout_margin="16dp"/>
+                <EditText
+                    android:id="@+id/createPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:layout_margin="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+                <Button
+                    android:id="@+id/creaAccBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/register" />
+
+                <Button
+                    android:id="@+id/needLoginBtn"
+                    style="@style/alreadyBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/needLogin" />
+        </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
